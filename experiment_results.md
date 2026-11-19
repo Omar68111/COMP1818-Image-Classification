@@ -40,3 +40,4 @@ Best checkpoint: models/resnet18_best.pth
 - ResNet still confused 192 dogs with cats.
 - The comparison includes different initialisation and preprocessing,
   so the gain cannot be attributed to residual connections alone.
+   
