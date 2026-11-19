@@ -51,4 +51,30 @@ Best checkpoint: models/resnet18_best.pth
 - ResNet still confused 192 dogs with cats.
 - The comparison includes different initialisation and preprocessing,
   so the gain cannot be attributed to residual connections alone.
-   
+  
+
+## Research Method Investigation
+
+Reference paper:
+He et al. (2016), Deep Residual Learning for Image Recognition.
+
+Implemented method:
+ResNet-18 with ImageNet pretrained weights.
+
+Adaptation:
+- Replaced the original classifier with a 10-class output layer.
+- Froze the pretrained feature extraction layers.
+- Used CIFAR-10 for training, validation and testing.
+- Applied ImageNet preprocessing for the pretrained model.
+
+Comparison:
+- Constant-prediction trivial baseline.
+- CNN trained from scratch.
+- Frozen pretrained ResNet-18.
+
+Important limitations:
+- The comparison does not isolate residual connections.
+- ResNet benefits from ImageNet pretraining.
+- Model depth and preprocessing differ.
+- Full fine-tuning and augmentation were not evaluated.
+ 
