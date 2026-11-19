@@ -10,6 +10,17 @@ Random seed: 42
 
 ## Final Results
 
+### Trivial Baseline
+
+Method: Always predict class 0 (airplane).
+
+Test images: 10,000
+Correct predictions: 1,000
+Test accuracy: 10.00%
+
+This classifier makes no use of the image pixels and
+requires no training.
+
 | Metric | Baseline CNN | ResNet-18 |
 |---|---:|---:|
 | Test accuracy | 69.32% | 85.15% |
